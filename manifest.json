@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Open and Focus URL",
+  "version": "1.0",
+  "description": "Open and focus on a specific URL or activate the tab if it's already open.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "notifications"
+  ],
+  "action": {
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+}
